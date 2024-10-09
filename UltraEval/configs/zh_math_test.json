@@ -1,0 +1,21 @@
+[
+    {
+        "task_name": "gsm8k_gsm8k_gen",
+        "path": "../data/test/zh_math_test.jsonl",
+        "description": "",
+        "transform": "datasets/gsm8k/transform_gen_zh.py",
+        "fewshot": 0,
+        "generate": {
+            "method": "generate",
+            "params": "models/model_params/math_sample.json"
+        },
+        "postprocess": "gsm8k_zero_post",
+        "metric": {
+            "accuracy": {
+                "evaluation": {
+                    "type": "exact_match"
+                }
+            }
+        }
+    }
+]

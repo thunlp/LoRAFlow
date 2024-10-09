@@ -1,0 +1,7 @@
+{
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 512,
+    "sampling_num": 1,
+    "stop": ["Question:", "Question", "USER:", "USER", "ASSISTANT:", "ASSISTANT", "Instruction:", "Instruction", "Response:", "Response", "[INST]"]
+}

@@ -1,0 +1,24 @@
+[
+    {
+    "task_name": "mbpp_mbpp_gen",
+    "path": "../data/dev/es_code_dev.jsonl",
+    "description": "",
+    "transform": "datasets/mbpp/transform_gen_es.py",
+    "fewshot": 0,
+    "generate": {
+        "method": "generate",
+        "params": "models/model_params/code_sample.json"
+    },
+    "postprocess": "mbpp_post",
+    "metric": {
+        "pass_k": {
+            "evaluation": {
+                "type": "function_execution"
+            },
+            "aggregation": {
+                "type": "pass_k"
+            }
+        }
+    }
+}
+]

@@ -1,0 +1,23 @@
+[{
+    "task_name": "humaneval",
+    "path": "../data/test/es_code_test.jsonl",
+    "description": "",
+    "transform": "datasets/humaneval/transform_gen_es.py",
+    "fewshot": 0,
+    "batch_size": 512,
+    "generate": {
+        "method": "generate",
+        "params": "models/model_params/code_sample.json"
+    },
+    "postprocess": "humaneval_refine_post",
+    "metric": {
+        "pass_k": {
+            "evaluation": {
+                "type": "function_execution"
+            },
+            "aggregation": {
+                "type": "pass_k"
+            }
+        }
+    }
+}]

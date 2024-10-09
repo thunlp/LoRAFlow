@@ -1,0 +1,6 @@
+{
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 512,
+    "sampling_num": 1
+}
