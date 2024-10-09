@@ -146,9 +146,6 @@ We have released all of our LoRA modules and gates on [Hugging Face](https://hug
       Chen, Yun  and
       Liu, Zhiyuan  and
       Sun, Maosong",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = aug,
     year = "2024",
@@ -157,6 +154,5 @@ We have released all of our LoRA modules and gates on [Hugging Face](https://hug
     url = "https://aclanthology.org/2024.acl-long.695",
     doi = "10.18653/v1/2024.acl-long.695",
     pages = "12871--12882",
-    abstract = "LoRA employs lightweight modules to customize large language models (LLMs) for each downstream task or domain, where different learned additional modules represent diverse skills. Combining existing LoRAs to address new tasks can enhance the reusability of learned LoRAs, particularly beneficial for tasks with limited annotated data. Most prior works on LoRA combination primarily rely on task-level weights for each involved LoRA, making different examples and tokens share the same LoRA weights. However, in generative tasks, different tokens may necessitate diverse skills to manage. Taking the Chinese math task as an example, understanding the problem description may depend more on the Chinese LoRA, while the calculation part may rely more on the math LoRA. To this end, we propose LoRA-Flow, which utilizes dynamic weights to adjust the impact of different LoRAs. The weights at each step are determined by a fusion gate with extremely few parameters, which can be learned with only 200 training examples. Experiments across six generative tasks demonstrate that our method consistently outperforms baselines with task-level fusion weights. This underscores the necessity of introducing dynamic fusion weights for LoRA combination.",
 }
 ```
