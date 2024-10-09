@@ -28,6 +28,4 @@ OPTS+=" --lora_root_path  ./checkpoints/BM_LoRAs"
 OPTS+=" --train_data_path ./data/train/${language}_${task}_train.jsonl"
 OPTS+=" --batch_size_per_device $bsz --epochs $epoch --lr $lr"
 
-
-# 运行任务
 torchrun --nnodes=1 --nproc_per_node=2 --master_port=$MASTER_PORT $CODE/train.py ${OPTS} &> $LOG_FILE
