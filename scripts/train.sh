@@ -17,10 +17,8 @@ FREQ=1 # change the gradient_accumulation_steps if needed
 epoch=5
 NUM_GPUS=$(echo $CUDA_VISIBLE_DEVICES | awk -F, '{print NF}')
 
-# 构建日志文件名
 LOG_FILE="./scripts/logs/${language}_${task}_bsz_$((bsz * FREQ * NUM_GPUS))_lr_${lr}_epoch_${epoch}.log"
 
-# 构建 OPTS
 OPTS=""
 OPTS+=" --gradient_accumulation_steps $FREQ"
 OPTS+=" --model_name_or_path ./checkpoints/Llama-2-7b-mc"
